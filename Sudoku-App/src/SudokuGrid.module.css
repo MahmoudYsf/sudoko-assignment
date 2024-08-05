@@ -9,14 +9,15 @@
   grid-template-columns: repeat(9, 40px);
   grid-template-rows: repeat(9, 40px);
   gap: 0px;
-  border: 2px solid black;
+  border: 3.5px solid black;
+  border-radius: 5px;
 }
 
 .cell {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.5px solid #ccc;
+  border: 0.01px solid #9AB79D;
 }
 
 .input {
@@ -43,7 +44,7 @@
 }
 
 .selected {
-  background-color: #e0f7fa;
+  background-color: #C7EBEC;
 }
 
 .mistakes {
@@ -51,30 +52,26 @@
   font-size: 18px;
 }
 
-.restartButton {
-  margin-top: 10px;
-  padding: 5px 10px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: red;
-  border-radius : 30px;
-}
-
-.thickBorder {
-  border: 1px solid black;
-}
-
-.thickBorderRight {
-  border-right: 2px solid black;
-}
-
-.thickBorderBottom {
-  border-bottom: 2px solid black;
-}
-
 .gameOverMessage {
   margin-top: 10px;
   font-size: 18px;
   color: red;
   font-weight: bold;
+}
+
+.restartButton {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #9AB79D;
+  border-radius: 15px;
+}
+
+.thickBorderRight {
+  border-right: 3.5px solid black;
+}
+
+.thickBorderBottom {
+  border-bottom: 3.5px solid black;
 }
