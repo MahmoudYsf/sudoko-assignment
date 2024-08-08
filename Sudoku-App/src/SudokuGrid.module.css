@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
 }
 
 .grid {
@@ -47,6 +48,18 @@
   background-color: #C7EBEC;
 }
 
+.highlighted {
+  background-color: #9AB79D;
+}
+
+.thickBorderRight {
+  border-right: 3.5px solid black;
+}
+
+.thickBorderBottom {
+  border-bottom: 3.5px solid black;
+}
+
 .mistakes {
   margin-top: 10px;
   font-size: 18px;
@@ -68,10 +81,11 @@
   border-radius: 15px;
 }
 
-.thickBorderRight {
-  border-right: 3.5px solid black;
-}
+.difficultySelect {
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 16px;
+  background-color: #9AB79D;
+  border-radius: 15px;
 
-.thickBorderBottom {
-  border-bottom: 3.5px solid black;
 }
