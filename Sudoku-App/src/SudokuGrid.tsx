@@ -226,13 +226,9 @@ const SudokuGrid: React.FC = () => {
   };
 
   const handleRestart = () => {
-    restartGame(
-      initialGrid,
-      setGrid,
-      setMistakes,
-      setSelectedCell,
-      setGameOver
-    );
+    const newGrid = selectGrid(difficulty); // Use the current difficulty to select a new grid
+    setInitialGrid(newGrid);
+    restartGame(newGrid, setGrid, setMistakes, setSelectedCell, setGameOver);
     setHighlightedNumber(null);
     setUserMadeChanges(false); // Reset change tracking on restart
   };
